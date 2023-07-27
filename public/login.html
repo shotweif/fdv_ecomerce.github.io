@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDV : LogIn</title>
+    <!-- -Links----------------------- -->
+    <link rel="stylesheet" href="css/signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ----------------------------- -->
+</head>
+<body>
+    <!-- loader -->
+    <img src="img/dark-loader.gif"  class="loader">
+
+    <!-- Box alert -->
+    <div class="alerta_box">
+        <img src="img/advertencia.png" alt="" class="alert_img">
+        <p class="error_msg">Mensaje de error</p>
+    </div>
+
+    <!-- signup -->
+    <div class="container">
+        <img src="img/logo/fdv-log.png" class="logo" alt="FDV-Logo">
+        <div>
+            <input type="email" autocomplete="off" id="email" placeholder="Email*">
+            <input type="password" autocomplete="off" id="password" placeholder="Password*">
+
+            <button class="submit_btn">Iniciar Sesion</button>
+        </div>
+        <a href="/signup" class="link">No tienes cuenta? Crear cuenta</a>
+    </div>
+
+    <!-- Dinamic js -->
+    <script src="js/form.js"></script>
+    <script src="js/token.js"></script>
+
+</body>
+</html>

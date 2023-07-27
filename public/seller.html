@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+    <!-- -Links----------------------- -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/seller.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ----------------------------- -->
+</head>
+<body class="body_in">
+    <!-- loader -->
+    <img src="img/dark-loader.gif"  class="loader">
+
+    <!-- Box alert -->
+    <div class="alerta_box">
+        <img src="img/advertencia.png" alt="" class="alert_img">
+        <p class="error_msg">Mensaje de error</p>
+    </div>
+
+    <!-- Logo -->
+    <img src="img/logo/fdv-log.png" class="logo_cent" alt="">
+
+    <!-- becom seller elemnts -->
+    <div class="become_seller hide">
+        <p class="heading">Become Seller </p>
+        <p class="des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit voluptas dolores alias eaque ipsum perspiciatis eum in voluptatem numquam molestiae? Doloribus nulla blanditiis magni debitis quam itaque sint totam dicta.
+        Ipsa quo dolorum error magni illo nam reiciendis nulla molestias vitae et consectetur cumque beatae cum, aliquam corrupti, commodi tenetur nesciunt magnam? Nisi numquam voluptas officiis laborum! Eum, architecto rem.
+        Accusamus maxime impedit saepe officia natus voluptate quas. Perferendis adipisci suscipit unde, esse saepe officia blanditiis consectetur obcaecati vel asperiores aut quod. Ullam commodi ipsa ut mollitia culpa, similique vitae?
+        Dolor, ipsam ullam odit explicabo fugiat laudantium architecto officia et veritatis repudiandae maiores delectus cupiditate recusandae suscipit aliquam totam voluptatibus dicta corrupti porro id illum incidunt quis enim eligendi! Sequi.</p>
+        <button class="btn" id="apply_btn">apply for seller account</button>
+    </div>
+
+    <!-- Aply form -->
+    <div class="apply_form hide">
+        <input type="text" id="business_name" placeholder="business name / company name / shop name*">
+        <textarea id="address" placeholder="address*"></textarea>
+        <textarea id="about" placeholder="about*"></textarea>
+        <input type="text" id="number" placeholder="number">
+
+        <input type="checkbox" class="checkbox" checked id="terms_and_cond">
+        <label for="terms_and_cond">He leido y acepto
+        <a href="#">Terminos y condiciones.</a>
+        </label>
+        <br>
+        <input type="checkbox" class="checkbox" checked id="legitInfo">
+        <label for="legitInfo">Toda la informacion es legitima.</label>
+        
+        <button class="submit_btn" id="apply_form_btn">apply</button>
+    </div>
+
+    <!-- products list -->
+    <div class="product_listing hide">
+        <div class="add_product">
+            <p class="add_product_title">Añadir producto</p>
+            <button class="btn" onclick="location.href = '/add-product'">Añadir producto</button>
+        </div>
+        <img src="img/Production_Flatline.png" class="no_product_image hiden" alt="">
+    
+        <!-- delete alert -->
+        <div class="delete_alert">
+            <div class="alert">
+                <button class="close_btn">
+                    <img src="img/cancelar.png" alt="">
+                </button>
+                <img src="img/delete-warning.png" class="delete_svg" alt="">
+                <p class="text">Estas seguro? Desear eliminaras este producto</p>
+                <button class="delete_btn">Eliminar</button>
+            </div>
+        </div>
+
+        <!-- cards -->
+        <div class="product_container">
+            <!--div class="product_card">
+                <div class="product_image">
+                    <span class="tag">Edit</span>
+                    <img src="img/galery/product001.webp" class="procduct_thumb" alt="">
+                    <button class="card_action_btn edit_btn"><img src="img/editar.png" alt=""> </button>
+                    <button class="card_action_btn open_btn"><img src="img/openid.png" alt=""> </button>
+                    <button class="card_action_btn delete_popup_btn"><img src="img/borrar.png" alt=""> </button>
+                
+                </div>
+                <div class="product_info">
+                    <h2 class="product_brand">brand</h2>
+                    <p class="product_short_des">a short line about the product.</p>
+                    <span class="price">$144</span>
+                    <span class="actual_price">$180</span>
+                </div>
+            </div-->
+        </div>
+
+    </div>
+
+    <!-- Dinamic js -->
+    <script src="js/token.js"></script>
+    <script src="js/createProduct.js"></script>
+    <script src="js/seller.js"></script>
+
+</body>
+</html>

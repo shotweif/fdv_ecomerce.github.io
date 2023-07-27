@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDV : Add Product</title>
+    <!-- -Links----------------------- -->
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/addProduct.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ----------------------------- -->
+</head>
+<body class="body_in">
+    <!-- loader -->
+    <img src="img/dark-loader.gif"  class="loader">
+
+    <!-- Box alert -->
+    <div class="alerta_box">
+        <img src="../img/advertencia.png" alt="" class="alert_img">
+        <p class="error_msg">Mensaje de error</p>
+    </div>
+
+    <!-- Logo -->
+    <img src="../img/logo/fdv-log.png" class="logo_cent" alt="">
+
+    <!-- Product adder -->
+    <div class="form">
+        <input type="text" id="product_name" placeholder="Nombre del producto">
+        <input type="text" id="product-des" placeholder="Descripcion breve del producto">
+        <textarea id="des" placeholder="Detalles y detalles"></textarea>
+        <!-- Product img -->
+        <div class="product_info">
+            <div class="product_image">
+                <p class="text">Imagen del producto</p>
+            </div>
+            <div class="upload_images_sec">
+                <!-- uploas inputs -->
+                <p class="text"><img src="../img/camara-de-accion.png" alt="">Cargar imagen</p>
+                <div class="upload_catalouge">
+                    <input type="file" class="fileupload" id="first_file_upload_btn" hidden>
+                    <label for="first_file_upload_btn" class="upload_image"></label>
+                    
+                    <input type="file" class="fileupload" id="second_file_upload_btn" hidden>
+                    <label for="second_file_upload_btn" class="upload_image"></label>
+                    
+                    <input type="file" class="fileupload" id="third_file_upload_btn" hidden>
+                    <label for="third_file_upload_btn" class="upload_image"></label>
+                    
+                    <input type="file" class="fileupload" id="fourth_file_upload_btn" hidden>
+                    <label for="fourth_file_upload_btn" class="upload_image"></label>
+                </div>
+            </div>
+            <div class="select_size">
+                <p class="text">Tamaños del producto</p>
+                <div class="sizes">
+                    <!-- FQK -->
+                    <input type="checkbox" class="size_checkbox" id="full" value="Full Size">
+                    <label for="full"></label>
+                    
+                    <input type="checkbox" class="size_checkbox" id="queen" value="Queen Size">
+                    <label for="queen"></label>
+                    
+                    <input type="checkbox" class="size_checkbox" id="king" value="King Size">
+                    <label for="king"></label>
+                    
+                    <!-- Amoada -->
+                    <input type="checkbox" class="size_checkbox" id="ctn_cnt" value="70x50 cm">
+                    <label for="ctn_cnt"></label>
+                    
+                    <input type="checkbox" class="size_checkbox" id="nvt_cnt" value="93x50 cm">
+                    <label for="nvt_cnt"></label>
+                    
+                    <!--  -->
+                    <!--input type="checkbox" class="size_checkbox" id="queen" value="Queen Size">
+                    <label for="queen"></label>
+                    
+                    <input type="checkbox" class="size_checkbox" id="queen" value="Queen Size">
+                    <label for="queen"></label-->
+            
+                </div>
+            </div>
+        </div>
+
+        <div class="product_price">
+            <input type="number" id="actual_price" placeholder="precio actual">
+            <input type="number" id="discount" placeholder="descuento">
+            <input type="number" disabled id="sell_price" placeholder="precio venta">
+        </div>
+
+        <input type="number" id="stock" min="5" placeholder="stock del producto (5 minimo)">
+        <textarea id="tags" placeholder="Categoria, por ejemplo Duvet, Almoada, Sabana." ></textarea>
+
+        <input type="checkbox" class="checkbox" id="tac" checked>
+        <label for="tac">FDV take 30% from total sell.</label>
+
+        <div class="buttons">
+            <button class="btn" id="add_btn">Añadir Producto</button>
+            <button class="btn" id="save_btn">Guardar Borrador</button>
+            <button class="btn" id="back_btn" onclick="location.href='/seller'">Regresar</button>
+        </div>
+
+    <!-- Dinamic js -->
+    <script src="../js/token.js"></script>
+    <script src="../js/addProduct.js"></script>
+
+</body>
+</html>

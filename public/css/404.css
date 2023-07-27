@@ -1,0 +1,29 @@
+.back_g{
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+.page_error{
+    min-height: calc(100vh - 245px);
+}
+.four_cero_for_image{
+    display: block;
+    margin: 60px auto;
+    width: 30%;
+    height: auto;
+}
+.four_cero_for_msg{
+    text-align: center;
+    color: #383838;
+}
+.title_error{
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.four_cero_for_msg a{
+    color: #383838;
+}
+.btn_back{
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+.btn_back a{opacity: .5;}
+.btn_back a:hover {opacity: 1;}
