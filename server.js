@@ -278,7 +278,7 @@ app.post('/get-products', (req, res) => {
 //-------------------------------------------------------------------
 // Delete product
 app.post('/delete-product', (req, res) => {
-    let { id, document } = req.body;
+    let { id } = req.body;
 
     db.collection("products").doc(id).delete()
     .then((data) => {
